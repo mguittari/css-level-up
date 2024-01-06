@@ -1,0 +1,61 @@
+$font-stack: Helvetica, sans-serif;
+$font-size: 35px;
+$primary-color: black;
+$bold-weight: 600;
+$border-right: 3px solid red;
+$border-top: 3px solid red;
+$border-left: 3px solid red;
+$border-bottom: 3px solid red;
+
+*{ 
+    margin: 0;
+    padding: 0;
+}
+
+.a {
+    grid-area: a;
+    width: 100%;
+    border: 3px solid red;
+}
+
+.b {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: b;
+    text-align: center;
+    font-size: 33px;
+    border-top: $border-top;
+    border-bottom: $border-bottom;
+    border-right: $border-right;
+    
+}
+
+.c {
+    grid-area: c;
+    padding: 6px;
+    text-align: justify;
+    border-right: $border-right;
+    border-bottom: $border-bottom;
+    border-left: $border-left;
+}
+
+.card {
+    margin-left: 1rem;
+    font: 100% $font-stack;
+    color: $primary-color;
+    display: grid;
+    grid-template-columns: 12rem 19rem;
+    grid-template-areas:
+    "a b"
+    "c c";  
+}
+
+.name {
+    font-weight: $bold-weight;
+    
+}
+
+
+
+
